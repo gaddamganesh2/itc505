@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <style>
+     body {
+     font-family: 'Arial', sans-serif; /* Set the font family */
+     color: black; /* Set the font color to black */
+     background-color: #91b6dd;
+    }
+
+     h1, h2 {
+     color: black; /* Set the font color for heading elements */
+    }
+     .game-controls button {
+     color: black /* Set the font color to white for buttons */
+    }
+    </style>
+</head>
+<body>
+    <button onclick="goBack()">Go Back to Home Page</button>
+    <div class="container">
+        <h1>Lights Out Game</h1>
+
+        <div class="game-info">
+            <h2>Addendum: Development Process and Creative Choices</h2>
+            <ol>
+                <li><strong>Game Structure and Initialization:</strong>
+                    <ul>
+                        <li>Goal: To create a Lights Out game using HTML, CSS, and JavaScript.</li>
+                        <li>Process:
+                            <ul>
+                                <li>Defined the game structure using HTML with a game board and buttons.</li>
+                                <li>Used CSS for styling, including animations and transitions.</li>
+                                <li>JavaScript was employed for game logic, such as toggling lights and checking for a win condition.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Game Initialization (`script.js`):</strong>
+                    <ul>
+                        <li>Challenges:
+                            <ul>
+                                <li>Ensuring the creation of a dynamic game board with toggleable lights.</li>
+                            </ul>
+                        </li>
+                        <li>Solutions:
+                            <ul>
+                                <li>Used nested loops to generate the grid of lights dynamically.</li>
+                                <li>Assigned event listeners to each light for toggling.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Random Initial State:</strong>
+                    <ul>
+                        <li>Creative Choices:
+                            <ul>
+                                <li>Implemented a function (`setRandomInitialState`) to randomly turn lights on or off at the start of the game for variety.</li>
+                                <li>Used the `Math.random()` function for a balanced distribution.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Toggle Lights and Win Conditions:</strong>
+                    <ul>
+                        <li>Creative Choices:
+                            <ul>
+                                <li>Developed the `toggleLights` function to switch the state of clicked lights and adjacent lights.</li>
+                                <li>Integrated the `checkWin` function to determine if all lights are turned off.</li>
+                                <li>Added a congratulatory message and reset the game on a win.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Styling (`styles.css`):</strong>
+                    <ul>
+                        <li>Creative Choices:
+                            <ul>
+                                <li>Applied a flex layout for responsiveness.</li>
+                                <li>Incorporated hover effects on lights and buttons for a visually appealing interface.</li>
+                                <li>Animated lights with a bounce effect on hover.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Game Controls (`index.html`):</strong>
+                    <ul>
+                        <li>Creative Choices:
+                            <ul>
+                                <li>Included "Start," "New Game," and "Exit Game" buttons.</li>
+                                <li>Created an "Addendum" button to showcase additional information.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Addendum and UI Changes:</strong>
+                    <ul>
+                        <li>Creative Choices:
+                            <ul>
+                                <li>Added an exit button for a cleaner user interface.</li>
+                                <li>Altered font and background image for aesthetic improvements.</li>
+                                <li>Implemented a pulse animation on the exit button for user engagement.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = "launching.html";
+        }
+    </script>
+</body>
+</html>
